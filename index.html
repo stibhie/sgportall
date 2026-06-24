@@ -742,37 +742,37 @@
 
     <div class="budget-grid">
 
-      <!-- LEFT: EDITABLE DEPARTMENT BARS -->
+      <!-- LEFT: DEPARTMENT BARS -->
       <div class="budget-bars">
 
         <div class="bar-row">
           <div class="bar-dept">Events</div>
           <div class="bar-track"><div class="bar-fill" id="bar-events" style="width:0%;background:#c9a84c;transition:width .5s;"></div></div>
-          <div class="bar-amt-wrap">₱<input class="editable-num" id="alloc-events" type="number" value="165000" min="0" oninput="recalc()" /></div>
-        </div>
+          <div class="val success" id="sum-remaining">₱165,900</span>
+        </div> 
 
         <div class="bar-row">
           <div class="bar-dept">Academics</div>
           <div class="bar-track"><div class="bar-fill" id="bar-academics" style="width:0%;background:#4a9eff;transition:width .5s;"></div></div>
-          <div class="bar-amt-wrap">₱<input class="editable-num" id="alloc-academics" type="number" value="90000" min="0" oninput="recalc()" /></div>
+          <div class="val success" id="sum-remaining">₱90,000</span>
         </div>
 
         <div class="bar-row">
           <div class="bar-dept">Operations</div>
           <div class="bar-track"><div class="bar-fill" id="bar-operations" style="width:0%;background:#a78bfa;transition:width .5s;"></div></div>
-          <div class="bar-amt-wrap">₱<input class="editable-num" id="alloc-operations" type="number" value="20000" min="0" oninput="recalc()" /></div>
+          <div class="val success" id="sum-remaining">₱20,000</span>
         </div>
 
         <div class="bar-row">
           <div class="bar-dept">Outreach</div>
           <div class="bar-track"><div class="bar-fill" id="bar-outreach" style="width:0%;background:#3ecf8e;transition:width .5s;"></div></div>
-          <div class="bar-amt-wrap">₱<input class="editable-num" id="alloc-outreach" type="number" value="55000" min="0" oninput="recalc()" /></div>
+          <div class="val success" id="sum-remaining">₱55,000</span>
         </div>
 
         <div class="bar-row">
           <div class="bar-dept">Reserves</div>
           <div class="bar-track"><div class="bar-fill" id="bar-reserves" style="width:0%;background:rgba(255,255,255,.25);transition:width .5s;"></div></div>
-          <div class="bar-amt-wrap">₱<input class="editable-num" id="alloc-reserves" type="number" value="120000" min="0" oninput="recalc()" /></div>
+          <div class="val success" id="sum-remaining">₱120,000</span>
         </div>
 
         <div class="bar-row" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--navy-border);">
@@ -780,8 +780,6 @@
           <div class="bar-track"><div class="bar-fill" style="width:100%;background:rgba(201,168,76,.25);"></div></div>
           <div class="bar-amt-wrap" style="color:var(--gold);font-weight:600;" id="total-alloc-display">₱450,000</div>
         </div>
-
-        <p class="calc-hint">✏️ Click any amount to edit — all totals update automatically.</p>
       </div>
 
       <!-- RIGHT: SUMMARY CARD -->
@@ -794,7 +792,7 @@
 
         <div class="budget-summary-row">
           <span class="label">Total disbursed</span>
-          <span class="val">₱<input class="editable-num" id="sum-spent" type="number" value="100" min="0" oninput="recalc()" style="color:var(--white);" /></span>
+          <span class="val success" id="sum-remaining">₱100</span>
         </div>
 
         <div class="budget-summary-row">
